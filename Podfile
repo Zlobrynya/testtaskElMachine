@@ -6,5 +6,8 @@ target 'testtaskElMachine' do
   use_frameworks!
 
   # Pods for testtaskElMachine
-
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  pod 'SwiftyJSON', '~> 4.0'
+  pod 'Alamofire'
 end

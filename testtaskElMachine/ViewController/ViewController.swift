@@ -13,6 +13,10 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        let obsr = ServerModel.getSimpleSearch(search: "git")
+        _ = obsr.subscribe({ event in
+            print("event \(event.element?.count)")
+        })
     }
 
 
